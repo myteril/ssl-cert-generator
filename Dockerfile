@@ -7,4 +7,6 @@ VOLUME /etc/letsencrypt /var/lib/letsencrypt
 
 RUN apk add --no-cache certbot
 
+CMD ["generate"]
+
 COPY generate /bin
